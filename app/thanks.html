@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Оборудование для инженерных систем в Казахстане</title>
+  <meta name="description" content="Оборудование для инженерных систем в Казахстане">
+  <meta name="keywords" content="Оборудование для инженерных систем в Казахстане">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon.ico?v=13" type="image/x-icon">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body id="main-page">
+
+  <div class="page-wrapper">
+
+    <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+    <a href="tel:+77789710606" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+          </a>
+
+          <h3 class="header__title">
+              Оборудование <br>
+              для инженерных <br>
+              систем в Казахстане
+          </h3>
+
+          <div class="header__body">
+            <div class="header__info d-none d-lg-block">
+              <div class="header__grafik">
+                Пн-Пт. 09:00 - 18:00
+              </div>
+
+              <a href="tel:+77789710606" class="text-phone" id="phone_number">+7 778 971-06-06</a>
+            </div>
+
+            <div class="header__nav">
+              <nav class="main-menu">
+                <div class="container">
+                  <ul>
+                    <li>
+                      <a class="link" href="/#product">Продукция</a>
+                    </li>
+                    <li>
+                      <a class="link" href="/#brend">Бренды</a>
+                    </li>
+                    <li>
+                      <a class="link" href="/#company">О компании</a>
+                    </li>
+                    <li>
+                      <a class="link" href="/#dostavka">Доставка и оплата</a>
+                    </li>
+                    <li class="last">
+                      <a class="link" href="/#contact">Контакты</a>
+                    </li>
+                    <li class="d-lg-none">
+                      <a href="tel:+77789710606" class="text-phone" id="phone_number">+7 778 971-06-06</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
+            </div>
+          </div>                   
+
+          <button class="hamburger hamburger--elastic hamburger--accessible">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>        
+      </div>
+    </header>
+
+    <section class="section s-thanks">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <div class="s-thanks__title">Ваше заявка принята. </div>
+            <div class="s-thanks__text">В ближайшее время мы свяжемся с Вами.</div>
+            <a href="/" class="s-thanks__link">Вернуться на главную</a>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer inverse">
+      <div class="container">
+        <div class="footer__content">
+          <a href="/" class="logo">
+            <img src="./img/logo2.png" alt="">
+          </a>
+
+          <div class="footer__address">050010, г. Алматы, 
+              ул. Кастеева, 14      </div>
+
+          <div class="footer__phone">Телефоны:
+            <a href="tel:+77789710606" class="text-phone" id="phone_number">+7 778 971-06-06</a> 
+          </div>
+
+          <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
+
+          <div class="footer__comand">Создано командой
+            <a href="//marketing-time.kz" target="_blank"><img src="./img/marketing-time.png" alt="MarketingTime"></a>
+            <div class="footer__comand__info">поток клиентов для Вашего бизнеса</div> 
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+
+    <div class="form form--vertical">
+      <form action="/mail.php" method="post">
+        <div class="form__content">
+          <input type="hidden" name="info" value="Обратный звонок">
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Имя">
+          </div>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
+
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
