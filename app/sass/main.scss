@@ -465,6 +465,11 @@
     max-width: 920px;
     margin: 0 auto;
     padding: 0 80px;
+
+    img {
+      border-top: 3px solid $accent;
+      border-bottom: 3px solid $accent;
+    }
   }
 }
 
