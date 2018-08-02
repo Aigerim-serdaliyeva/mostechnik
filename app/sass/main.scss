@@ -47,6 +47,8 @@
   z-index: 98;
   padding: 10px 0;
   background-color: #fff;
+  font-family: HelveticaNeueCyr, serif;
+  font-weight: 500;
 
   &--scrolled {
     background-color: rgba(#fff, 1);      
@@ -151,7 +153,9 @@
     display: inline-block;
     line-height: 1.5;
     text-decoration: none;
-    font-weight: normal;
+    font-family: HelveticaNeueCyr, serif;
+    // font-weight: normal;
+    font-weight: 500;
     border-bottom: 2px solid transparent;
 
     &.link {
