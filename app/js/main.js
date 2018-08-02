@@ -166,9 +166,20 @@ $(document).ready(function () {
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      0: { items: 1, mouseDrag: true, dots: false, nav: true },
       480: { items: 2, },
       768: { items: 3, },
+    },
+  });
+
+  $(".carousel-reshenie").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: true, dots: false, nav: true },
+      480: { items: 2, },
     },
   });
 
@@ -178,9 +189,9 @@ $(document).ready(function () {
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      0: { items: 1, mouseDrag: true, dots: false, nav: true },
       480: { items: 2, },
-      768: { items: 3, },
+      768: { items: 3, mouseDrag: false, dots: true, nav: false},
       990: { items: 4, },
     },
   });
@@ -188,35 +199,41 @@ $(document).ready(function () {
   $(".carousel-certificates").owlCarousel({
     loop: true,
     smartSpeed: 500,
+    dots: false, 
+    nav: true,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
-      768: { items: 3, mouseDrag: true, dots: false, nav: true },
+      0: { items: 1, mouseDrag: false },
+      480: { items: 2, mouseDrag: true },
+      768: { items: 3 },
     },
   });
 
   $(".carousel-more").owlCarousel({
     loop: false,
     smartSpeed: 500,
+    dots: false, 
+    nav: true,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      576: { items: 3, mouseDrag: true, dots: false, nav: true },
-      768: { items: 4, mouseDrag: true, dots: false, nav: true },
+      0: { items: 1, mouseDrag: false },
+      576: { items: 3, mouseDrag: true },
+      768: { items: 4 },
     },
   });
 
   $(".carousel-more2").owlCarousel({
     loop: false,
+    dots: false, 
+    nav: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      576: { items: 2, mouseDrag: true, dots: false, nav: true },
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
     },
   });
 

@@ -94,6 +94,7 @@
 .footer {
   background-color: #1e1e1e;
   font-size: 14px;
+  letter-spacing: 0;
 
   .logo {
     margin-right: 140px;
@@ -108,7 +109,7 @@
   }
 
   &__address {
-    max-width: 108px;
+    max-width: 128px;
     margin-right: 80px;
   }
 
@@ -177,8 +178,8 @@
   &-title {
     font-family: HelveticaNeueCyr, serif;
     font-size: 24px;
-    // font-weight: bold;
-    font-weight: 500;
+    font-weight: bold;
+    // font-weight: 500;
     margin: 0 auto 40px;
     text-align: center;
 
@@ -200,11 +201,11 @@
 
   &__title {
     font-size: 30px;
-    margin: 0 0 30px 0;
+    margin: 0 auto 30px;
     text-align: center;
     font-family: HelveticaNeueCyr, serif;
     font-weight: 900;
-    max-width: 1100px;
+    max-width: 1020px;
   }
 
   &__text {
@@ -216,9 +217,10 @@
   }
 
   ul {
-    margin: 0 0 50px 0;
+    margin: 0 auto 50px;
     padding: 0;
     display: flex;
+    justify-content: center;
     li {
       list-style: none;
       font-size: 16px;
@@ -251,6 +253,7 @@
     
     &__title {
       font-size: 22px;
+      max-width: 850px;
     }
     
     &__content {
@@ -329,7 +332,8 @@
     }
 
     &__title {
-      font-weight: bold;
+      font-weight: normal;
+      font-style: 14px;
       text-align: center;
       flex-grow: 1;
       margin-bottom: 10px;
@@ -344,6 +348,10 @@
   .form {
     max-width: 945px;
     margin: 25px auto 0;
+
+    &__title {
+      max-width: 600px;
+    }
   }
 }
 
@@ -351,6 +359,10 @@
   background-image: url("../img/product-back.jpg");
 
   .carousel-brend {
+    display: none;
+  }
+
+  .carousel-reshenie {
     display: none;
   }
 
@@ -382,6 +394,10 @@
   .form {
     max-width: 490px;
     padding: 40px 40px 60px;
+
+    &__info {
+      text-align: center;
+    }
   }
 }
 

@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   background-color: #1b68ab;
   font-family: $default_family, sans-serif;
-  padding: 8px 20px 8px 15px;   
+  padding: 8px 20px 8px 20px;   
 
   &.error {
     border-color: red;
@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     text-align: left;
     color: red;
-    padding-left: 35px;
+    padding-left: 20px;
     margin-top: 5px;
 	}
 
@@ -330,6 +330,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-family: HelveticaNeueCyr, serif;
     font-weight: 500;
+    letter-spacing: 0;
     margin-bottom: 20px;
   }
 
@@ -340,6 +341,7 @@ h1, h2, h3, h4, h5, h6 {
   &__info {
     font-size: 11px;
     text-align: left;
+    letter-spacing: 0;
     font-style: italic;
   }
 
@@ -353,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
       }
 
       &__title {
-        max-width: 600px;
+        // max-width: 600px;
         margin: 0 auto 20px;
       }
 
@@ -415,6 +417,13 @@ h1, h2, h3, h4, h5, h6 {
       transform: translateY(-50%);
       outline: 0;
       z-index: 10;
+
+      .remodal & {
+        top: 59.5px;
+        width: 32px;
+        height: 43px;
+        background-image: url("../img/arrow-left-middle.png") !important;
+      }
 		}
 
 		&-prev {
@@ -424,6 +433,10 @@ h1, h2, h3, h4, h5, h6 {
 		&-next {
       right: 0px;
       background-image: url('../img/arrow-right.png') !important;
+
+      .remodal & {
+        background-image: url("../img/arrow-right-middle.png") !important;
+      }
     }
 
     &-dots {
